@@ -2238,11 +2238,3 @@ input, select, textarea {
 		.hover-container:hover .content {
 			opacity: 1; /* Makes the hover text visible */
 		}
-
-		@media {
-			.hover-container .content {
-				opacity: 1; 
-				background: rgba(0, 0, 0, 0.402); /* Optional: background color for hover text */
-				color: #ffffff; /* Text color */
-			}
-		}
