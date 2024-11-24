@@ -2239,10 +2239,10 @@ input, select, textarea {
 			opacity: 1; /* Makes the hover text visible */
 		}
 
-		@media (hover: hover){
-			.hover-container:hover .content {
-				opacity: 1; /* Default hidden */
-				position: absolute; /* Ensure it’s ready for toggle */
-				transition: opacity 0.3s ease-in-out; /* Smooth transition */
+		@media {
+			.hover-container .content {
+				opacity: 1; 
+				background: rgba(0, 0, 0, 0.402); /* Optional: background color for hover text */
+				color: #ffffff; /* Text color */
 			}
 		}
