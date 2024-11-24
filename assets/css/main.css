@@ -72,6 +72,7 @@ input, select, textarea {
 	appearance: none;
 }
 
+
 /* Row */
 
 	.row {
@@ -2236,4 +2237,12 @@ input, select, textarea {
 		
 		.hover-container:hover .content {
 			opacity: 1; /* Makes the hover text visible */
+		}
+
+		@media (hover: hover){
+			.hover-container:hover .content {
+				opacity: 1; /* Default hidden */
+				position: absolute; /* Ensure it’s ready for toggle */
+				transition: opacity 0.3s ease-in-out; /* Smooth transition */
+			}
 		}
