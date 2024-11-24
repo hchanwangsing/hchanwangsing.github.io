@@ -2189,5 +2189,41 @@ input, select, textarea {
 			}
 
 		}
+		.hover-container {
+			position: relative;
+			overflow: hidden;
+    		display: inline-block; /* Shrinks the container to fit the image */
+    		margin: 0; /* Remove any margins */
+    		padding: 10px; /* Adjust padding around the image */
+			width: 100%; /* Matches the size of the image */
+			height: 100%;
+    		box-sizing: border-box;
+		}
+		
+		.hover-container img {
+			display: block; /* Ensures no extra space is added by inline elements */
+			width: 100%; /* Scales image to fit its container */
+			height: auto; /* Maintains aspect ratio */
+		}
 
+		.hover-container .content {
+			display: flex;
+			inset: 0;
+			width: 100% ; 
+			height: 100% ;
+			position: absolute;
+			padding: 10px;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+			background: rgba(0, 0, 0, 0.678); /* Optional: background color for hover text */
+			color: #fff; /* Text color */
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		
+		.hover-container:hover .content {
+			opacity: 1; /* Makes the hover text visible */
+		}
 		
