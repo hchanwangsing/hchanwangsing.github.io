@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://chanws.me/sitemap.xml
+
+# Disallow crawling of assets and non-content directories
+Disallow: /assets/sass/
+Disallow: /assets/webfonts/
+
+# Allow CSS and JS for proper rendering
+Allow: /assets/css/
+Allow: /assets/js/
